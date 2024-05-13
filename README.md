@@ -55,13 +55,13 @@ To run the tool using Docker, ensure Docker is installed on your system and foll
 The input files should be TSV (Tab-Separated Values) format containing gene expression data. Each file must have genes as rows and samples as columns for each condition.
 
 ## Output File Format
-| Target  | Regulator | Condition    | Weight      
-|---------|-----------|--------------|---------------|
-| CACYBP  | NACA      | condition1   | -0.070261455  | 
-| CACYBP  | NACA      | condition2   | 0.9567267     | 
+| Target  | Regulator | Condition        | Weight        |
+|---------|-----------|--------------    |---------------|
+| CLCA2  | BAMBI      | non-differential | -0.070261455  | 
+| DAPL1  | SHC4       | differential     | 0.9567267     | 
 
 **Column Descriptions:**
 - **Target**: Target node of the edge.
 - **Regulator**: Source node of the edge.
 - **Weight**: Correlation coefficient of the gene pair for the specified condition.
-- **Condition**:
+- **Condition**: is it differential or non-differential
