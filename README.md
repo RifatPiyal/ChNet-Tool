@@ -158,9 +158,9 @@ The input files should be TSV (Tab-Separated Values) format containing gene expr
 
 ## Additional Material 
 - [chNet's GitHub](https://github.com/Zhangxf-ccnu/chNet)
-- [chNet's Vignette](https://github.com/Zhangxf-ccnu/chNet/blob/master/chNet_2.0.0.pdf)
+- [chNet's author doc](https://github.com/Zhangxf-ccnu/chNet/blob/master/chNet_2.0.0.pdf)
 - [chNet's Paper](https://academic.oup.com/bioinformatics/article/37/23/4414/6318772)
-- [Supplementary Data](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/37/23/10.1093_bioinformatics_btab502/2/btab502_supplementary_data.pdf?Expires=1718562724&Signature=JICple-9y7ryV5XTQVIvsoByQOYt1AIqYfz1m4qYuP6pg9DOBWWhf8OiZF-q2pqw3djPJiZ7Ep5Z1hbxeI4KRslopjKZHJyDHcGgrGP0LNesQ8R8o8FE2~pyVf6zqi0xtjPOg3qCNMNVK0-f7m4EIiVEcfcKHh2N8fmi~Ahaw2enHpe3V6nj3sV19oCsOtfmNhwRr4RqrrHgxmGeiappv17EZDbtqI2Jo1MhpZxP9P89uAAmpB81PMppYJGPm03cg7d2Ih~i~hvjYB2OQYhNJQfgHF4Yk6iuo1CAN0gsC~1nsbX4bCOvtU8wdV57gGflfyLDe8GUMxJfUJgSlyHosg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
+
 
 <br>
 ## Reference
