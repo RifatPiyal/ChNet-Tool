@@ -135,7 +135,7 @@ Rscript downstream_analysis.R --operation_type "paper" --input1 "TCGA.BRCA" --co
 ```bash
  Rscript downstream_analysis.R --operation_type "paper" --input1 "GSE13159.AML" --condition1 "cancer" --condition2 "normal" --output_path "Results/downstream/paper" --pdf_name_suffix "GSE13159.AML"
 ```
-Replicate the ChNet paper analysis using Rscript directly for as follows:
+#Replicate the ChNet paper analysis using Rscript directly for as follows:
 
 **TCGA.BRCA Genes:**
 ```bash
@@ -148,16 +148,6 @@ Replicate the ChNet paper analysis using Rscript directly for as follows:
 ```
 
 
-4. # Make the R scripts executable
-```bash
-RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/downstream_analysis.R
-RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/GSE13159.AML_TSV.R    
-RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/Reference_data_Input_output.R
-RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/replicate_paper.R 
-RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/TCGA.BRCA_TSV.R
- ```
-
- 
 ## Parameters
 - `--input_file_1`: Path to the TSV file containing gene expression data for the first condition.
 - `--input_file_2`: Path to the TSV file containing gene expression data for the second condition.
