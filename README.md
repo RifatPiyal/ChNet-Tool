@@ -19,11 +19,6 @@
 ## Brief Description
 This tool is a command-line utility designed as a wrapper around the ChNet package that can do differential network analysis by simultaneously analyzing differential gene interaction and differential gene expression. This helps to detect notable variations in gene correlation between various biological states, providing a deeper understanding of gene regulatory processes.
 
-## Reference
-For detailed methodology and application, please refer to:
-Jia-Juan Tu, Le Ou-Yang, Yuan Zhu, Hong Yan, Hong Qin, Xiao-Fei Zhang, Differential network analysis by simultaneously considering changes in gene interactions and gene expression, Bioinformatics, Volume 37, Issue 23, December 2021, Pages 4414–4423, https://doi.org/10.1093/bioinformatics/btab502.
-
-
 ## Installation Software
 Download and install the software below
  - Install RStudio
