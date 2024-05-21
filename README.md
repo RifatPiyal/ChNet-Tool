@@ -135,7 +135,7 @@ Rscript downstream_analysis.R --operation_type "paper" --input1 "TCGA.BRCA" --co
 ```bash
  Rscript downstream_analysis.R --operation_type "paper" --input1 "GSE13159.AML" --condition1 "cancer" --condition2 "normal" --output_path "Results/downstream/paper" --pdf_name_suffix "GSE13159.AML"
 ```
-*Replicate the ChNet paper analysis using Rscript directly for as follows:
+## Replicate the ChNet paper analysis using Rscript directly for as follows:
 
 **TCGA.BRCA Genes:**
 ```bash
