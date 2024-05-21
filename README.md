@@ -78,25 +78,24 @@ docker run --rm -v "/${PWD}/output:/usr/src/app/output" -v "/${PWD}/Ref_dataset:
 
 **500 Genes:**
 ```bash
-docker run --rm -v "/${PWD}/output:/usr/src/app/output" -v "/${PWD}/Ref_dataset:/usr/src/app/Ref_dataset" docker Rscript Reference_data_Input_output.R  --input1 "Ref_dataset/500/out_CD8_exhausted.tsv" --input2 "Ref_dataset/500/out_Macrophages.tsv" --output_path "output/TSV_files/500" --file_name_suffix "500"
+docker run -v "/${PWD}/output:/usr/src/app/output" -v "/${PWD}/Ref_dataset:/usr/src/app/Ref_dataset" docker Rscript downstream_analysis.R --operation_type "ref" --input1 "Ref_dataset/500/out_CD8_exhausted.tsv" --input2 "Ref_dataset/500/out_Macrophages.tsv" --condition1 "CD8 Exhausted T-cells" --condition2 "Macrophages" --output_path "output/downstream/500" --pdf_name_suffix "500"
 ```
 **1000 Genes:**
 ```bash
-docker run --rm -v "/${PWD}/output:/usr/src/app/output" -v "/${PWD}/Ref_dataset:/usr/src/app/Ref_dataset" docker Rscript Reference_data_Input_output.R  --input1 "Ref_dataset/1000/out_CD8_exhausted.tsv" --input2 "Ref_dataset/1000/out_Macrophages.tsv" --output_path "output/TSV_files/1000" --file_name_suffix "1000"
+docker run -v "/${PWD}/output:/usr/src/app/output" -v "/${PWD}/Ref_dataset:/usr/src/app/Ref_dataset" docker Rscript downstream_analysis.R --operation_type "ref" --input1 "Ref_dataset/1000/out_CD8_exhausted.tsv" --input2 "Ref_dataset/1000/out_Macrophages.tsv" --condition1 "CD8 Exhausted T-cells" --condition2 "Macrophages" --output_path "output/downstream/1000" --pdf_name_suffix "1000"
 ```
 **2500 Genes:**
 ```bash
-docker run --rm -v "/${PWD}/output:/usr/src/app/output" -v "/${PWD}/Ref_dataset:/usr/src/app/Ref_dataset" docker Rscript Reference_data_Input_output.R  --input1 "Ref_dataset/2500/out_CD8_exhausted.tsv" --input2 "Ref_dataset/2500/out_Macrophages.tsv" --output_path "output/TSV_files/2500" --file_name_suffix "2500"
+docker run -v "/${PWD}/output:/usr/src/app/output" -v "/${PWD}/Ref_dataset:/usr/src/app/Ref_dataset" docker Rscript downstream_analysis.R --operation_type "ref" --input1 "Ref_dataset/2500/out_CD8_exhausted.tsv" --input2 "Ref_dataset/2500/out_Macrophages.tsv" --condition1 "CD8 Exhausted T-cells" --condition2 "Macrophages" --output_path "output/downstream/2500" --pdf_name_suffix "2500"
 ```
 **TCGA.BRCA Genes:**
 ```bash
- docker run --rm -v "/${PWD}/output:/usr/src/app/output" docker Rscript TCGA.BRCA_TSV.R --dataset "TCGA.BRCA" --output_path "output/TSV_files/paper"
-
+docker run --rm -v "/${PWD}/output:/usr/src/app/output" docker Rscript downstream_analysis.R --operation_type "paper" --input1 "TCGA.BRCA" --condition1 "Basal" --condition2 "LumA" --output_path "output/downstream/paper" --pdf_name_suffix "TCGA.BRCA"
 ```
 
 **GSE13159.AML Genes:**
 ```bash
- docker run --rm -v "/${PWD}/output:/usr/src/app/output" docker Rscript GSE13159.AML_TSV.R --dataset "GSE13159.AML" --output_path "output/TSV_files/paper"
+docker run --rm -v "/${PWD}/output:/usr/src/app/output" docker Rscript downstream_analysis.R --operation_type "paper" --input1 "GSE13159.AML" --condition1 "cancer" --condition2 "normal" --output_path "output/downstream/paper" --pdf_name_suffix "GSE13159.AML"
 ```
 ## Replicate the Paper
 ### Execute the ChNet tool using Docker to replicate the figures of ChNet paper
