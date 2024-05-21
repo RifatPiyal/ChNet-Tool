@@ -47,9 +47,6 @@ To run the tool using Docker, ensure Docker is installed on your system and foll
    ```bash
    docker build -t docker .
    ```
-3. Run the tool using the Docker container:
-   ```bash
-   docker run --rm -v ./data:/data dgca-tool dgca.R --input_file_1 /data/BRCA_normal.tsv --input_file_2 /data/BRCA_tumor.tsv --output_path /data
 ## Reference Data Input Output
 Execute the ChNet tool using Docker for different datasets
 <br>
