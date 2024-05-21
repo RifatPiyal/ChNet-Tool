@@ -155,3 +155,69 @@ The input files should be TSV (Tab-Separated Values) format containing gene expr
 - **Regulator**: Source node of the edge.
 - **Weight**: Correlation coefficient of the gene pair for the specified condition.
 - **Condition**: is it differential or non-differential
+
+## Additional Material 
+- [chNet's GitHub](https://github.com/Zhangxf-ccnu/chNet)
+- [chNet's Vignette](https://github.com/Zhangxf-ccnu/chNet/blob/master/chNet_2.0.0.pdf)
+- [chNet's Paper](https://academic.oup.com/bioinformatics/article/37/23/4414/6318772)
+- [Supplementary Data](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/37/23/10.1093_bioinformatics_btab502/2/btab502_supplementary_data.pdf?Expires=1718562724&Signature=JICple-9y7ryV5XTQVIvsoByQOYt1AIqYfz1m4qYuP6pg9DOBWWhf8OiZF-q2pqw3djPJiZ7Ep5Z1hbxeI4KRslopjKZHJyDHcGgrGP0LNesQ8R8o8FE2~pyVf6zqi0xtjPOg3qCNMNVK0-f7m4EIiVEcfcKHh2N8fmi~Ahaw2enHpe3V6nj3sV19oCsOtfmNhwRr4RqrrHgxmGeiappv17EZDbtqI2Jo1MhpZxP9P89uAAmpB81PMppYJGPm03cg7d2Ih~i~hvjYB2OQYhNJQfgHF4Yk6iuo1CAN0gsC~1nsbX4bCOvtU8wdV57gGflfyLDe8GUMxJfUJgSlyHosg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
+
+<br>
+## Reference
+
+<a id="1">[1]</a>
+Wickham, Hadley. (2016).
+ggplot2: Elegant Graphics for Data Analysis.
+Springer-Verlag New York.
+ISBN: 978-3-319-24277-4 Add to Citavi project by ISBN.
+ggplot2
+
+<a id="2">[2]</a>
+Carlson, Marc. (2023).
+org.Hs.eg.db: Genome wide annotation for Human.
+R package version 3.18.0.
+
+<a id="3">[3]</a>
+Tu, Jia-Juan. (2024).
+chNet: Differential network analysis by simultaneously considering changes in gene interactions and gene expression.
+R package version 2.0.0.
+
+<a id="4">[4]</a>
+Auguie, Baptiste. (2017).
+gridExtra: Miscellaneous Functions for "Grid" Graphics.
+R package version 2.3.
+gridExtra
+
+<a id="5">[5]</a>
+Huber, Wolfgang; Carey, V.J.; Gentleman, R.; et al. (2015).
+Orchestrating high-throughput genomic analysis with Bioconductor.
+Nature Methods, 12, pages 115-121.
+BiocGenerics
+
+<a id="6">[6]</a>
+Wickham, Hadley. (2007).
+Reshaping Data with the reshape Package.
+Journal of Statistical Software, 21(12), pages 1-20.
+reshape2
+
+<a id="7">[7]</a>
+Gu, Zuguang. (2016, 2022).
+Complex heatmap publications in Bioinformatics and iMeta.
+
+<a id="8">[8]</a>
+Csárdi, Gábor; Nepusz, Tamás. (2024).
+igraph: Network Analysis and Visualization in R.
+DOI: 10.5281/zenodo.7682609, Add to Citavi project by DOI R package version 2.0.3.
+igraph
+
+<a id="9">[9]</a>
+Gu, Zuguang; Gu, Lei; Eils, Roland; Schlesner, Matthias; Brors, Benedikt. (2014).
+circlize implements and enhances circular visualization in R.
+Bioinformatics, 30(19), pages 2811-2812.
+
+<a id="10">[10]</a>
+Kolde, Raivo. (2019).
+pheatmap: Pretty Heatmaps.
+R package version 1.0.12.
+pheatmap
+
