@@ -126,14 +126,13 @@ Replicate the Chnet paper analysis using Rscript directly for as follows:
 
 
 4. # Make the R scripts executable
+```bash
 RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/downstream_analysis.R
 RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/GSE13159.AML_TSV.R    
 RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/Reference_data_Input_output.R
 RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/replicate_paper.R 
 RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/TCGA.BRCA_TSV.R
-
-
-   ```
+ ```
 
 ## Output
 - ### Input/Output Analysis
