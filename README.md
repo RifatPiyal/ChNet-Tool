@@ -44,6 +44,15 @@ To run the tool using Docker, ensure Docker is installed on your system and foll
 3. Run the tool using the Docker container:
    ```bash
    docker run --rm -v ./data:/data dgca-tool dgca.R --input_file_1 /data/BRCA_normal.tsv --input_file_2 /data/BRCA_tumor.tsv --output_path /data
+
+4. # Make the R scripts executable
+RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/downstream_analysis.R
+RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/GSE13159.AML_TSV.R    
+RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/Reference_data_Input_output.R
+RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/replicate_paper.R 
+RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/TCGA.BRCA_TSV.R
+
+
    ```
 
 ## Parameters
