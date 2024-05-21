@@ -102,12 +102,12 @@ docker run --rm -v "/${PWD}/output:/usr/src/app/output" docker Rscript downstrea
 
 **TCGA.BRCA Genes:**
 ```bash
- Rscript replicate_paper.R --input1 "TCGA.BRCA" --condition1 "Basal" --condition2 "LumA" --output_path "Results/replicate_paper" --pdf_name_suffix "TCGA.BRCA"
+docker run --rm -v "/${PWD}/output:/usr/src/app/output" docker Rscript replicate_paper.R --input1 "TCGA.BRCA" --condition1 "Basal" --condition2 "LumA" --output_path "output/replicate_paper" --pdf_name_suffix "TCGA.BRCA"
 ```
 
 **GSE13159.AML Genes:**
 ```bash
- Rscript replicate_paper.R --input1 "GSE13159.AML" --condition1 "cancer" --condition2 "normal" --output_path "Results/replicate_paper" --pdf_name_suffix "GSE13159.AML"
+docker run --rm -v "/${PWD}/output:/usr/src/app/output" docker Rscript replicate_paper.R --input1 "GSE13159.AML" --condition1 "cancer" --condition2 "normal" --output_path "output/replicate_paper" --pdf_name_suffix "GSE13159.AML"
 ```
 
 
