@@ -48,8 +48,8 @@ To run the tool using Docker, ensure Docker is installed on your system and foll
    docker build -t docker .
    ```
 ## Reference Data Input Output
-Execute the ChNet tool using Docker for different datasets
-<br>
+# Execute the ChNet tool using Docker for different datasets
+
 **500 Genes:**
 ```bash
 docker run --rm -v "/${PWD}/output:/usr/src/app/output" -v "/${PWD}/Ref_dataset:/usr/src/app/Ref_dataset" docker Rscript Reference_data_Input_output.R  --input1 "Ref_dataset/500/out_CD8_exhausted.tsv" --input2 "Ref_dataset/500/out_Macrophages.tsv" --output_path "output/TSV_files/500" --file_name_suffix "500"
