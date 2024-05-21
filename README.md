@@ -86,7 +86,7 @@ library("devtools")
 install_github("Zhangxf-ccnu/chNet", subdir="pkg")
 ```
 
-Execute the Chnet analysis using Rscript directly for reference gene and paper gene datasets as follows:
+## Execute the Chnet analysis using Rscript directly for reference gene and paper gene datasets as follows:
 <br>
 **500 Genes:**
 ```bash
@@ -111,7 +111,7 @@ Rscript Reference_data_Input_output.R --input1 "ref_dataset/2500/out_CD8_exhaust
 ```
 
 
-Execute the ChNet analysis using Rscript directly for downstream analysis as follows:
+## Execute the ChNet analysis using Rscript directly for downstream analysis as follows:
 
 **500 Genes:**
 ```bash
