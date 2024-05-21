@@ -134,14 +134,6 @@ RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/replicate_paper.R
 RUN chmod +x C:/Users/Piyal/Desktop/Bio/R/Docker/TCGA.BRCA_TSV.R
  ```
 
-## Output
-- ### Input/Output Analysis
-* `network.tsv`: tab-separated file that contains all edges (row-wise) with the following columns:
-     * First column `target`: Target of the edge
-     * Second column `regulator`: Source of the edge
-     * Third column `condition`: Whether `Differential` or `Non-differential`.
-     * Fourth column `weight`: Weight of the edge.
-
  
 ## Parameters
 - `--input_file_1`: Path to the TSV file containing gene expression data for the first condition.
@@ -158,6 +150,7 @@ The input files should be TSV (Tab-Separated Values) format containing gene expr
 | DAPL1  | SHC4       | differential     | 1          | 
 
 **Column Descriptions:**
+* `network.tsv`: tab-separated file that contains all edges (row-wise) with the following columns:
 - **Target**: Target node of the edge.
 - **Regulator**: Source node of the edge.
 - **Weight**: Correlation coefficient of the gene pair for the specified condition.
