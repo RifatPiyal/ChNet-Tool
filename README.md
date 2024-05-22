@@ -199,7 +199,6 @@ Algorithm: Workflow of the ChNet Tool
 - Input File 1: Gene expression dataset for condition 1.
 - Input File 2: Gene expression dataset for condition 2.
 - Output Path: Directory to save the results.
-- 
 
 **Procedure:**
 
