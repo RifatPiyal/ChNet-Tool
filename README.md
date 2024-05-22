@@ -208,20 +208,32 @@ Algorithm: Workflow of the ChNet Tool
 
 ![Screenshot 2024-05-22 022941](https://github.com/RifatPiyal/ChNet-Tool/assets/51060047/8e54c05b-9755-4c61-ad7b-55057af372ed)
 
+## Computational Steps for Differential Network Analysis
+**Requirements:**
+- Input File 1: Gene expression dataset for condition 1.
+- Input File 2: Gene expression dataset for condition 2.
+- Output Path: Directory to save the results.
+- 
 
-# Problem Formulation: 
-The analysis starts with gene expression datasets from two different conditions, 𝑋 ( 1 ) X (1) and 𝑋 ( 2 ) X (2), assumed to follow multivariate normal distributions. The goal is to estimate the differential network defined by differences in partial correlations between the two conditions.
-# Hypothesis Testing: 
-The method uses hypothesis tests to determine changes in partial correlations ( 𝐻 0 , 𝑖 𝑗 ( 1 ) H 0,ij (1) ​ ) and changes in expression levels ( 𝐻 0 , 𝑖 ( 2 ) H 0,i (2) ​ ). Partial correlation test statistic ( 𝑡 𝑖 𝑗 t ij ​ ) and expression level test statistic ( 𝑧 𝑖 z i ​ ) are computed and compared against thresholds to determine significance.
-# Hierarchical Constraints:
-The optimization framework combines the two test statistics, ensuring that a differential edge is considered only if at least one of the two genes is expressed differently.
-This hierarchical constraint improves interpretability by associating differential interactions with changes in gene expression.
-# Optimization Model:
-An objective function is minimized to align the test statistics with the optimization variables while imposing sparsity.
-The constraints ensure that a gene must be differentially expressed to contribute to a differential edge, enhancing the accuracy of the differential network.
-# Biological Insights:
-For breast cancer, the method identifies significant genes and interactions in the luminal A and basal-like subtypes.
-For acute myeloid leukemia, the method reveals key gene interactions, providing insights into the molecular mechanisms underlying these conditions.
+**Procedure:**
+
+1. **Data Preparation:**
+- Load Datasets: Read the gene expression datasets from the specified input files into data frames.
+- Verify Data Consistency: Ensure both datasets have the same genes in the same order by intersecting the gene lists.
+- Combine Datasets: Combine the datasets from both conditions into a single matrix.
+- Run Analysis: Perform the differential network analysis using the chNet package.
+
+
+
+**condition:**
+Indicates whether the interaction between the gene pairs is differential or non-differential. The condition is determined based on the differential expression status of the genes involved:
+-differential: Both genes in the pair are differentially expressed.
+-non-differential: At least one of the genes in the pair is not differentially expressed
+-Calculate test statistics for partial correlations ( 𝑡 𝑖 𝑗 t ij ​ ) to quantify the loss and for expression levels ( 𝑧 𝑖 z i ​ ) to enforce sparsity. Determine thresholds ( 𝜆 𝑖 λ i ​ and 𝜆 𝑖 𝑗 λ ij ​ ) to identify significant changes. Identify significant interactions and gene expressions using the determined thresholds
+
+**Output** 
+a network.tsv file detailing the differential coexpression network, specifying target, regulator, condition, and weight for each gene pair.
+Genes and edges that exceed the defined thresholds ( 𝜆 𝑖 λ i ​ and 𝜆 𝑖 𝑗 λ ij ​ , respectively) are classified as differential (Diff); otherwise, they are classified as non-differential (Non-diff).
 
 ## Additional Material 
 - [chNet's GitHub](https://github.com/Zhangxf-ccnu/chNet)
