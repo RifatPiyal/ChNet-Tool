@@ -213,9 +213,11 @@ Algorithm: Workflow of the ChNet Tool
 
 **condition:**
 Indicates whether the interaction between the gene pairs is differential or non-differential. The condition is determined based on the differential expression status of the genes involved:
+
 -differential: Both genes in the pair are differentially expressed.
 -non-differential: At least one of the genes in the pair is not differentially expressed
--Calculate test statistics for partial correlations ( 𝑡 𝑖 𝑗 t ij ​ ) to quantify the loss and for expression levels ( 𝑧 𝑖 z i ​ ) to enforce sparsity. Determine thresholds ( 𝜆 𝑖 λ i ​ and 𝜆 𝑖 𝑗 λ ij ​ ) to identify significant changes. Identify significant interactions and gene expressions using the determined thresholds
+
+-Calculate test statistics for partial correlations ( 𝑡 𝑖 𝑗 t ij ​ ) to quantify the loss and for expression levels ( 𝑧 𝑖 z i ​ ) to enforce sparsity. Determine thresholds ( 𝜆 𝑖 λ i ​ and 𝜆 𝑖 𝑗 λ ij ) to identify significant changes. Identify significant interactions and gene expressions using the determined thresholds
 
 **Output** 
 a network.tsv file detailing the differential coexpression network, specifying target, regulator, condition, and weight for each gene pair.
