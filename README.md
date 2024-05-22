@@ -202,6 +202,27 @@ The input files should be TSV (Tab-Separated Values) format containing gene expr
 - **Weight**: Correlation coefficient of the gene pair for the specified condition.
 - **Condition**: is it differential or non-differential
 
+## Methodology
+
+Algorithm: Workflow of the ChNet Tool
+
+![Screenshot 2024-05-22 022941](https://github.com/RifatPiyal/ChNet-Tool/assets/51060047/8e54c05b-9755-4c61-ad7b-55057af372ed)
+
+
+# Problem Formulation: 
+The analysis starts with gene expression datasets from two different conditions, 𝑋 ( 1 ) X (1) and 𝑋 ( 2 ) X (2), assumed to follow multivariate normal distributions. The goal is to estimate the differential network defined by differences in partial correlations between the two conditions.
+# Hypothesis Testing: 
+The method uses hypothesis tests to determine changes in partial correlations ( 𝐻 0 , 𝑖 𝑗 ( 1 ) H 0,ij (1) ​ ) and changes in expression levels ( 𝐻 0 , 𝑖 ( 2 ) H 0,i (2) ​ ). Partial correlation test statistic ( 𝑡 𝑖 𝑗 t ij ​ ) and expression level test statistic ( 𝑧 𝑖 z i ​ ) are computed and compared against thresholds to determine significance.
+# Hierarchical Constraints:
+The optimization framework combines the two test statistics, ensuring that a differential edge is considered only if at least one of the two genes is expressed differently.
+This hierarchical constraint improves interpretability by associating differential interactions with changes in gene expression.
+# Optimization Model:
+An objective function is minimized to align the test statistics with the optimization variables while imposing sparsity.
+The constraints ensure that a gene must be differentially expressed to contribute to a differential edge, enhancing the accuracy of the differential network.
+# Biological Insights:
+For breast cancer, the method identifies significant genes and interactions in the luminal A and basal-like subtypes.
+For acute myeloid leukemia, the method reveals key gene interactions, providing insights into the molecular mechanisms underlying these conditions.
+
 ## Additional Material 
 - [chNet's GitHub](https://github.com/Zhangxf-ccnu/chNet)
 - [chNet's author doc](https://github.com/Zhangxf-ccnu/chNet/blob/master/chNet_2.0.0.pdf)
