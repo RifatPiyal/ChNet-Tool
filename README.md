@@ -265,22 +265,19 @@ Reshaping Data with the reshape Package.
 Journal of Statistical Software, 21(12), pages 1-20.
 reshape2
 
-<a id="7">[7]</a>
-Gu, Zuguang. (2016, 2022).
-Complex heatmap publications in Bioinformatics and iMeta.
 
-<a id="8">[8]</a>
+<a id="7">[8]</a>
 Csárdi, Gábor; Nepusz, Tamás. (2024).
 igraph: Network Analysis and Visualization in R.
 DOI: 10.5281/zenodo.7682609, Add to Citavi project by DOI R package version 2.0.3.
 igraph
 
-<a id="9">[9]</a>
+<a id="8">[9]</a>
 Gu, Zuguang; Gu, Lei; Eils, Roland; Schlesner, Matthias; Brors, Benedikt. (2014).
 circlize implements and enhances circular visualization in R.
 Bioinformatics, 30(19), pages 2811-2812.
 
-<a id="10">[10]</a>
+<a id="9">[10]</a>
 Kolde, Raivo. (2019).
 pheatmap: Pretty Heatmaps.
 R package version 1.0.12.
