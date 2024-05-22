@@ -2,20 +2,6 @@
 
 # Differential network analysis (ChNet) Tool
 
-<details>
-<summary>Table of Contents</summary>
-
-- [Brief Description](#brief-description)
-- [Reference](#reference)
-- [Available Commands](#available-commands)
-- [Installation Instructions](#installation-instructions)
-  - [Using Docker](#using-docker)
-- [Parameters](#parameters)
-- [Input File Format](#input-file-format)
-- [Output File Format](#output-file-format)
-
-</details>
-
 ## Brief Description
 This tool is a command-line utility designed as a wrapper around the ChNet package that can do differential network analysis by simultaneously analyzing differential gene interaction and differential gene expression. This helps to detect notable variations in gene correlation between various biological states, providing a deeper understanding of gene regulatory processes.
 
